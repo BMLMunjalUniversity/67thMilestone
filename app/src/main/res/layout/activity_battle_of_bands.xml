@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".BattleOfBands">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            android:background="@drawable/bob"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_battle_of_bands"
+             android:id="@+id/include_battle_of_bands"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/favorites_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|right"
+        app:srcCompat="@drawable/ic_favorite_black_24dp"
+        android:tint="@android:color/white"
+        app:backgroundTint="@android:color/holo_red_light"
+        app:rippleColor="@android:color/white"
+        app:fabSize="normal"/>
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/location_fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="16dp"-->
+        <!--app:srcCompat="@android:drawable/ic_menu_mylocation"-->
+        <!--app:fabSize="normal"-->
+        <!--app:backgroundTint="@android:color/holo_green_light"-->
+        <!--android:tint="@android:color/background_light"-->
+        <!--app:elevation="7dp"-->
+        <!--app:layout_anchor="@id/include_battle_of_bands"-->
+        <!--app:layout_anchorGravity="bottom|right"/>-->
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@android:color/darker_gray"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:text="Registration"/>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/deal_web_view_holder"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context="com.example.android.a67th.MainActivity">
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context="com.example.android.a67th.MainActivity">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="PLAN A"
+                        android:id="@+id/textView17" />
+
+                    <android.support.v7.widget.CardView
+
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="370dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/card_padding"
+
+                        app:cardCornerRadius="@dimen/card_radius"
+                        android:layout_gravity="center"
+                        android:background="@android:color/holo_blue_light"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></RelativeLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:gravity="center_vertical"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="FEE"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Rs.300/-"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="BAND/CARD"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Yellow"
+                                    android:gravity="center"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="1dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical"
+                                android:background="@android:color/darker_gray"
+                                android:layout_height="match_parent">
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:gravity="center_vertical"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="INCLUSIONS"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Entry for 1 day + Entry to events on that day + Entry to 1 star night"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="PLAN B"/>
+                <android.support.v7.widget.CardView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="370dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_margin="@dimen/card_padding"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    android:layout_gravity="center"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center_vertical"
+
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="FEE"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Rs.800/-"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="BAND"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Blue"
+                                android:gravity="center"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="1dp"
+                            android:orientation="vertical"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:background="@android:color/darker_gray"
+                            android:layout_height="match_parent">
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="INCLUSIONS"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Entry for 4 days + Entry for Events on that day + Entry to all star nights"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="PLAN C"/>
+                <android.support.v7.widget.CardView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="370dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+
+                    android:layout_margin="@dimen/card_padding"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    android:background="@android:color/holo_blue_light"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="FEE"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Fees of particular flagship event"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="BAND"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Red"
+                                android:gravity="center"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="1dp"
+                            android:orientation="vertical"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:background="@android:color/darker_gray"
+                            android:layout_height="match_parent">
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="INCLUSIONS"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Entry to the Flagship event + Entry to Star Night on that date"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="PLAN D"/>
+                <android.support.v7.widget.CardView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="370dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+
+                    android:layout_margin="@dimen/card_padding"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    android:background="@android:color/holo_blue_light"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="FEE"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Rs. 1000/-"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="BAND"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Blue + 4-Day Accomodation Card"
+                                android:gravity="center"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="1dp"
+                            android:orientation="vertical"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:background="@android:color/darker_gray"
+                            android:layout_height="match_parent">
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="INCLUSIONS"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Entry for 4 days + Entry to Events + Entry to all Star Nights + Accomodation for 4 days"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        android:text="Accomodation"/>
+    <HorizontalScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:id="@+id/deal_web_view_holder1"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context="com.example.android.a67th.MainActivity">
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context="com.example.android.a67th.MainActivity">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="PLAN A"
+                        android:id="@+id/textView18" />
+
+                    <android.support.v7.widget.CardView
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="370dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+
+                        android:layout_margin="@dimen/card_padding"
+                        app:cardCornerRadius="@dimen/card_radius"
+                        android:background="@android:color/holo_blue_light"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:gravity="center_vertical"
+
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="FEE"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Rs.200/-"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="BAND/CARD"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="1 Day Accomodation Card"
+                                    android:gravity="center"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="1dp"
+                                android:orientation="vertical"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginBottom="15dp"
+                                android:background="@android:color/darker_gray"
+                                android:layout_height="match_parent">
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:gravity="center_vertical"
+
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="INCLUSIONS"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Accomodation on-campus for 1 day"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="PLAN B"/>
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="370dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+
+                    android:layout_margin="@dimen/card_padding"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="FEE"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Rs.350/-"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="BAND"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="2 Day Accomodation Card"
+                                android:gravity="center"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="1dp"
+                            android:orientation="vertical"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:background="@android:color/darker_gray"
+                            android:layout_height="match_parent">
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="INCLUSIONS"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Accomodation on-campus for 2 days"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="PLAN C"/>
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="370dp"
+
+                    android:layout_margin="@dimen/card_padding"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@android:color/holo_blue_light"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center_vertical"
+
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="FEE"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Rs. 500/-"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="BAND"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="3-Day Accomodation Card"
+                                android:gravity="center"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="1dp"
+                            android:orientation="vertical"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:background="@android:color/darker_gray"
+                            android:layout_height="match_parent">
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center_vertical"
+
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="INCLUSIONS"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Accomodation on-campus for 3 days"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="PLAN D"/>
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="370dp"
+
+                    android:layout_margin="@dimen/card_padding"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@android:color/holo_blue_light"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center_vertical"
+
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="FEE"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Rs. 600/-"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="BAND"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="4-Day Accomodation Card"
+                                android:gravity="center"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="1dp"
+                            android:orientation="vertical"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:background="@android:color/darker_gray"
+                            android:layout_height="match_parent">
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center_vertical"
+
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="INCLUSIONS"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Accomodation on-campus for 4 days"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+</LinearLayout>

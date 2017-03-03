@@ -1,0 +1,1183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/activity_events"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".EventsActivity">
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:background="@drawable/bml"/>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:padding="10dp"
+            android:text="FLAGSHIP EVENTS"
+            android:textSize="20sp"/>
+
+        <HorizontalScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/deal_web_view_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/content_main"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context="com.example.android.a67th.MainActivity">
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view1"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:clickable="true"
+                    android:onClick="openBattleOfBands">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_battleofthebands"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="Battle Of Bands"
+                        
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:background="#000000"
+                        />
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view2"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:clickable="true"
+                    android:onClick="openBeatTheStreet">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_beatthestreet"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="Beat The Street"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view3"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openBMUPitchers">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_bmupitchers"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="BMU Pitchers"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view4"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:onClick="openEcokart"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_ecokart"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="EcoKart"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view5"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openFashionCrave">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_fashion_crave"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="Fashion Crave"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view6"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openHackathon">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_hackathon"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="Hackathon"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view7"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openNitroSurge">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_nitrosurge"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="Nitro Surge"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="TECHNICAL EVENTS"
+            android:textSize="20sp"/>
+
+        <HorizontalScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/deal_web_view_holder1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/content_main1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context="com.example.android.a67th.MainActivity">
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view9"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openAerialDrones">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:padding="15dp"
+                        android:src="@drawable/aerialdronepic"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="Aerial Drones"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view10"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openBlackBox">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_blackbox"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="Black Box"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view11"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:clickable="true"
+                    android:onClick="openEcokart"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_ecokart"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="EcoKart"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view12"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openEventHorizon">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_event_horizon"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="Event Horizon"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view13"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openGamingArena">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_gamingarena"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="Gaming Arena"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view14"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openHackathon">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_hackathon"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="Hackathon"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view15"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openLineFollower">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:scaleType="centerCrop"
+                        android:padding="15dp"
+                        android:src="@drawable/linefollowerpic"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="Line Follower"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view16"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openLiveTicTacToe">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_livetictactoe"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="Live Tic Tac Toe"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view17"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openMatlabQuest">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_thematlabquest"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="Matlab Quest"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+                </android.support.v7.widget.CardView>
+
+
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view19"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openNerdParadise">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_nerdparadise"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="Nerd Paradise"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view35"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openNitroSurge">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_nitrosurge"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="Nitro Surge"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view20"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openRobotusKreig">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_robotus_kreig"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="Robotus Kreig"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="CULTURAL EVENTS"
+            android:textSize="20sp"/>
+
+        <HorizontalScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/deal_web_view_holder2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/content_main2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context="com.example.android.a67th.MainActivity">
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view21"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openBattleOfBands">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_battleofthebands"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="Battle Of Bands"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view22"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openBeatTheStreet">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_beatthestreet"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="Beat The Street"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view23"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openBMUMasterchef">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_bmumasterchef"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="BMU Masterchef"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view24"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openFashionCrave">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_fashion_crave"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="Fashion Crave"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view25"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openGrappling">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_grappling"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="Grappling"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view26"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openMyMilestoneMovie">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:padding="15dp"
+                        android:src="@drawable/mymilestonemoviepic"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="122dp"
+                        android:minLines="2"
+                        android:text="My Milestone Movie"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view27"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openNayavada">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:padding="15dp"
+                        android:src="@drawable/nayavadapic"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="Nayavada"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+
+                </android.support.v7.widget.CardView>
+
+
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view29"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openPerspective">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:padding="10dp"
+                        android:src="@drawable/prespectivepic"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="Perspective"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view30"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openQriosity">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:padding="15dp"
+                        android:src="@drawable/quriositypic"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="Qriosity"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view31"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openTheXposure">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+
+                        android:src="@drawable/xposurepic"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="The Xposure"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view32"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openTheatrePhantamonica">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_theatre"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="122dp"
+                        android:minLines="2"
+                        android:text="Theatre Phantamonica"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:background="#000000"/>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view39"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openWomensGotTalent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:src="@drawable/icon_womengottalent"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="122dp"
+                        android:minLines="2"
+                        android:text="Women's Got Talent"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:background="#000000"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view33"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openWriteItUp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:padding="15dp"
+                        android:src="@drawable/writeituppic"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="Write It Up"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view34"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openZombieHunt">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_zombiehunt"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="Zombie Hunt"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="MANAGEMENT EVENTS"
+            android:textSize="20sp"/>
+
+        <HorizontalScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/deal_web_view_holder3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/content_main4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context="com.example.android.a67th.MainActivity">
+
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view36"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openBMUPitchers">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_bmupitchers"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="BMU Pitchers"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view37"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:onClick="openMarketMadness">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_marketmadness"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top_1"
+                        android:text="Market Madness"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view38"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/card_margin_bottom_top"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/card_margin_bottom_top"
+                    android:clickable="true"
+                    android:onClick="openVirtualStockMarket">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_virtualstockmarket"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="122dp"
+                        android:minLines="2"
+                        android:text="Virtual Stock Market"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"                         android:textColor="#ffffff"                         android:background="#000000"/>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</ScrollView>

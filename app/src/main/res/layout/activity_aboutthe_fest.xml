@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:text="About The Fest"
+        android:fontFamily="serif"
+        android:textSize="34dp"/>
+
+    <ImageView
+        android:layout_width="188dp"
+        android:layout_height="124dp"
+        android:src="@drawable/wwe_logo"
+        android:padding="10dp"
+        android:layout_gravity="center"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view2"
+
+
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:clickable="true"
+
+        card_view:cardCornerRadius="8dp"
+        android:padding="30dp"
+        android:layout_height="wrap_content"
+
+        card_view:cardBackgroundColor="#ffffff"
+        card_view:contentPadding="5dp">
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="17dp"-->
+
+            <!--android:padding="5dp"-->
+            <!--android:text="@string/about_the_fest"/>-->
+        <com.bluejamesbond.text.DocumentView xmlns:ext="http://schemas.android.com/apk/res-auto"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            ext:documentView_antialias="true"
+            ext:documentView_cacheConfig="auto_quality"
+            ext:documentView_hyphen="-"
+            ext:documentView_lineHeightMultiplier="1.5"
+            ext:documentView_maxLines="100"
+            ext:documentView_insetPadding="10dp"
+            ext:documentView_insetPaddingBottom="10dp"
+            ext:documentView_insetPaddingLeft="10dp"
+            ext:documentView_insetPaddingRight="10dp"
+            ext:documentView_insetPaddingTop="10dp"
+            ext:documentView_reverse="false"
+            ext:documentView_text="@string/about_the_fest"
+            ext:documentView_textAlignment="justified"
+            ext:documentView_textColor="@android:color/darker_gray"
+            ext:documentView_textFormat="plain"
+            ext:documentView_textSize="17dp"
+            ext:documentView_textSubPixel="true"/>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

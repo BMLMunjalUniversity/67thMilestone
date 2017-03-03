@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<group android:checkableBehavior="single">-->
+        <!--<item-->
+            <!--android:id="@+id/nav_events"-->
+            <!--android:icon="@drawable/eventsicon"-->
+            <!--android:title="Events"-->
+            <!--/>-->
+        <!--<item-->
+            <!--android:id="@+id/nav_schedule"-->
+            <!--android:icon="@drawable/scheduleicon"-->
+            <!--android:title="Schedule" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_contacts"-->
+            <!--android:icon="@drawable/contactsicon"-->
+            <!--android:title="Contacts" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_favourites"-->
+            <!--android:icon="@drawable/notificationicon"-->
+            <!--android:title="Favourites" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_maps"-->
+            <!--android:icon="@drawable/mapsicon"-->
+            <!--android:title="Maps" />-->
+
+    <!--</group>-->
+
+    <item android:title="Social Connectivity">
+        <menu>
+
+            <item
+                android:id="@+id/nav_facebookui"
+                android:icon="@drawable/facebookui"
+                android:title="Facebook" />
+            <item
+            android:id="@+id/nav_instagramui"
+            android:icon="@drawable/instagram"
+            android:title="Instagram" />
+            <item
+                android:id="@+id/nav_twitter"
+                android:icon="@drawable/twitter"
+                android:title="Twitter" />
+
+        </menu>
+    </item>
+
+    <item android:title="Miscellaneous">
+        <menu>
+            <item
+                android:id="@+id/nav_register"
+                android:icon="@drawable/register"
+                android:title="Register" />
+            <item
+                android:id="@+id/nav_aboutus"
+                android:icon="@drawable/aboutusicon"
+                android:title="About Us" />
+            <item
+                android:id="@+id/nav_sponsers"
+                android:icon="@drawable/sponsorsicon"
+                android:title="Sponsors" />
+
+            <item
+                android:id="@+id/nav_About_the_fest"
+                android:icon="@drawable/aboutusicon"
+                android:title="About the Fest" />
+            <item
+                android:id="@+id/nav_disclaimer"
+                android:icon="@drawable/disclaimer"
+                android:title="Disclaimer" />
+            <item
+                android:id="@+id/nav_developers"
+                android:icon="@drawable/developersicon"
+                android:title="Developers" />
+        </menu>
+    </item>
+
+</menu>
