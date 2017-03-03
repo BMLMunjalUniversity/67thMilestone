@@ -4,9 +4,9 @@ android {
     signingConfigs {
         bml67 {
             keyAlias '67th Milestone'
-            keyPassword '67thmilestone@123'
+            keyPassword 'your password'
             storeFile file('C:/Users/Student/Desktop/Android/67thMilestoneBml/67th Milestone.jks')
-            storePassword '67thmilestone@123'
+            storePassword 'your password'
         }
     }
     compileSdkVersion 24
